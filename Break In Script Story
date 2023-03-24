@@ -124,13 +124,22 @@ Section:NewKeybind("Plank", "Get Items", Enum.KeyCode.T, function()
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
 
 end)
-Section:NewButton("Pie Dish", "Get Items", function()
+Section:NewButton("Pie Dish/BlxyCola", "Get Items", function()
 local args = {
     [1] = 1
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BloxyPack"):FireServer(unpack(args))
 
+
+end)
+local Section = Tab:NewSection("Buy")
+Section:NewButton("Buy Pie Dish", "40 Cost", function()
+	local args = {
+    [1] = "Pan"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItem"):FireServer(unpack(args))
 
 end)
 local Section = Tab:NewSection("Misc")
@@ -175,4 +184,6 @@ Section:NewTextBox("Drown People", "Kill People", function(txt)
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ToxicDrown"):FireServer(unpack(args))
 end)
-
+Section:NewButton("Unlock New Ending", "Add Ending", function()
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GetKeys"):FireServer()
+end)
