@@ -156,11 +156,7 @@ Section:NewTextBox("Remove Item", "Remove Item Forever", function(txt)
 	game:GetService("Players").LocalPlayer.Backpack[txt]:Destroy()
 end)
 Section:NewButton("Teleport To Cat", "To Cat", function()
-    local CatX = game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.X
-    local CatY = game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Y
-    local CatZ = game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Z
-    
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CatX,CatY,CatZ)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.X,game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Y,game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Z)
 end)
 
 
