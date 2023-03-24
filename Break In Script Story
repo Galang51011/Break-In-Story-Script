@@ -187,3 +187,11 @@ end)
 Section:NewButton("Unlock New Ending", "Add Ending", function()
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GetKeys"):FireServer()
 end)
+Section:NewButton("Click Door Front", "Door", function()
+local args = {
+    [1] = "Front"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Door"):FireServer(unpack(args))
+end)
+
