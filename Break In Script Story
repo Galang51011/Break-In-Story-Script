@@ -124,6 +124,15 @@ Section:NewKeybind("Plank", "Get Items", Enum.KeyCode.T, function()
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
 
 end)
+Section:NewButton("Pie Dish", "Get Items", function()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BloxyPack"):FireServer(unpack(args))
+
+
+end)
 local Section = Tab:NewSection("Misc")
 Section:NewButton("Find safe", "Find Safer", function()
     game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("http://www.roblox.com/asset/?id=3246691515")
