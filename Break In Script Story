@@ -167,5 +167,12 @@ end)
 Section:NewButton("Teleport To Cat", "To Cat", function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.X,game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Y,game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Z)
 end)
+Section:NewTextBox("Drown People", "Kill People", function(txt)
+	local args = {
+    [1] = 1,
+    [2] = game:GetService("Players"):WaitForChild(txt)
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("ToxicDrown"):FireServer(unpack(args))
+end)
 
