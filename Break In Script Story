@@ -124,7 +124,7 @@ Section:NewKeybind("Plank", "Get Items", Enum.KeyCode.T, function()
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
 
 end)
-Section:NewButton("Pie Dish/BlxyCola", "Get Items", function()
+Section:NewButton("Pie Dish/BloxyCola", "Get Items", function()
 local args = {
     [1] = 1
 }
