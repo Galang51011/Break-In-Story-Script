@@ -187,6 +187,15 @@ end)
 Section:NewButton("Unlock New Ending", "Add Ending", function()
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GetKeys"):FireServer()
 end)
+Section:NewButton("Ghost", "God Mode", function()
+local args = {
+    [1] = 9999999
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeStealth"):FireServer(unpack(args))
+end)
+
+
 Section:NewButton("Click Door Front", "Door", function()
 local args = {
     [1] = "Front"
