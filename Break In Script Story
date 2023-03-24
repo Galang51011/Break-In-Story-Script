@@ -116,43 +116,7 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
 
 end)
-Section:NewButton("Hammer", "Get Items", function()
-local args = {
-    [1] = true,
-    [2] = "Hammer"
-}
 
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementWeapon"):FireServer(unpack(args))
-
-end)
-Section:NewButton("CrowBar", "Get Items", function()
-local args = {
-    [1] = true,
-    [2] = "Crowbar"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementWeapon"):FireServer(unpack(args))
-
-end)
-Section:NewButton("Pitchfork", "Get Items", function()
-local args = {
-    [1] = true,
-    [2] = "Pitchfork"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementWeapon"):FireServer(unpack(args))
-
-end)	
-Section:NewButton("Breaker", "Get Items", function()
-local args = {
-local args = {
-    [1] = true,
-    [2] = "breaker"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementWeapon"):FireServer(unpack(args))
-
-end)	
 Section:NewKeybind("Plank", "Get Items", Enum.KeyCode.T, function()
 	local args = {
     [1] = "Plank"
