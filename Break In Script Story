@@ -134,7 +134,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 end)
 Section:NewButton("Pitchfork", "Get Items", function()
 local args = {
-    [1] = ""
+    [1] = "Pitchfore"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
