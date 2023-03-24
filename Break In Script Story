@@ -160,7 +160,7 @@ Section:NewButton("Teleport To Cat", "To Cat", function()
     local CatY = game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Y
     local CatZ = game:GetService("Workspace").TheHouse.SmallCat.Torso.CFrame.Z
     
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CatX, CatY, CatZ)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(CatX,CatY,CatZ)
 end)
 
 
