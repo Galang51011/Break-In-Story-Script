@@ -159,6 +159,8 @@ Section:NewButton("Ghost", "God mode", function()
     game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeStay"):FireServer()
 
 end)
-
+Section:NewButton("Teleport To Cat", "To Cat", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TheHouse.SmallCat.Torso,CFrame.X, game:GetService("Workspace").TheHouse.SmallCat.Torso,CFrame.Y, game:GetService("Workspace").TheHouse.SmallCat.Torso,CFrame.Z)
+end)
 
 
