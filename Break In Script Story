@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Break In", "Ocean")
+local Window = Library.CreateLib("Break In Story", "Ocean")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Get item")
 Section:NewButton("Apple", "Get Items", function()
