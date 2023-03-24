@@ -196,6 +196,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("
 end)
 
 local Tab = Window:NewTab("Setting")
-Section:NewKeybind("Toggle UI", "UI Show.Hide", Enum.KeyCode.ControlLeft, function()
+Section:NewKeybind("Toggle UI", "UI Show.Hide", Enum.KeyCode.H, function()
 	Library:ToggleUI()
 end)
