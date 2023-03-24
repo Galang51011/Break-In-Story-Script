@@ -194,6 +194,7 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Door"):FireServer(unpack(args))
 end)
+
 local Tab = Window:NewTab("Setting")
 Section:NewKeybind("Toggle UI", "UI Show.Hide", Enum.KeyCode.ControlLeft, function()
 	Library:ToggleUI()
