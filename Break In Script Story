@@ -1,0 +1,164 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Break In", "Ocean")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Get item")
+Section:NewButton("Apple", "Get Items", function()
+    local args = {
+    [1] = "Apple"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Cookie", "Get Items", function()
+    local args = {
+    [1] = "Cookie"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Bat", "Get Items", function()
+    local args = {
+    [1] = "Bat"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Broom", "Get Items", function()
+local args = {
+    [1] = true,
+    [2] = "Broom"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementWeapon"):FireServer(unpack(args))
+
+end)
+Section:NewButton("BloxyCola", "Get Items", function()
+    local args = {
+    [1] = "BloxyCola"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Sword", "Get Items", function()
+    local args = {
+    [1] = "LinkedSword"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Pizza", "Get Items", function()
+    local args = {
+    [1] = "Pizza2"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("MedKit", "Get Items", function()
+    local args = {
+    [1] = "MedKit"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Cure", "Get Items", function()
+    local args = {
+    [1] = "Cure"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Teddy", "Get Items", function()
+    local args = {
+    [1] = "TeddyBloxpin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Lollipop", "Get Items", function()
+    local args = {
+    [1] = "Lollipop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Expired Bloxy Cola", "Get Items", function()
+    local args = {
+    [1] = "ExpiredBloxyCola"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.GiveTool:FireServer(unpack(args))
+
+end)
+Section:NewButton("Key", "Get Items", function()
+local args = {
+    [1] = "Key"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
+
+end)
+Section:NewButton("Chip", "Get Items", function()
+local args = {
+    [1] = "Chips"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
+
+end)
+Section:NewKeybind("Plank", "Get Items", Enum.KeyCode.T, function()
+	local args = {
+    [1] = "Plank"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("GiveTool"):FireServer(unpack(args))
+
+end)
+local Section = Tab:NewSection("Misc")
+Section:NewButton("Find safe", "Find Safer", function()
+    game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("http://www.roblox.com/asset/?id=3246691515")
+game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("rbxassetid://3195645922")
+game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("http://www.roblox.com/asset/?id=363240671")
+game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("rbxassetid://3195645674")
+game:GetService("ReplicatedStorage").RemoteEvents.PaintingClicked:FireServer("http://www.roblox.com/asset/?id=178210631")
+
+end)
+Section:NewButton("Open safe", "Open Safer", function()
+local args = {
+    [1] = game:GetService("Workspace").CodeNote.SurfaceGui.TextLabel.Text
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.Safe:FireServer(unpack(args))
+
+end)
+
+Section:NewButton("Befriend Cat", "Cat never fight you", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Cattery"):FireServer()
+end)
+Section:NewButton("Unlock Basement Door", "Oepn Door", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("UnlockDoor"):FireServer()
+
+end)
+Section:NewButton("Anti Dark Basement", "Never dark in basement", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BasementMission"):FireServer()
+end)
+Section:NewTextBox("Remove Item", "Remove Item Forever", function(txt)
+	game:GetService("Players").LocalPlayer.Backpack[txt]:Destroy()
+end)
+Section:NewButton("Ghost", "God mode", function()
+    game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeStay"):FireServer()
+
+end)
+
+
+
